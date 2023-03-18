@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0a;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.countdown {
+  font-size: 3rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.timer-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.timer-form input {
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.button {
+  border: 0;
+  background-color: none;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  opacity: 0.8;
+  transition: opacity .3s ease-in;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button.start {
+  background-color: green;
+  color: #fff;
+}
+
+.button.stop {
+  background-color: red;
+  color: #fff;
+}
